@@ -16,6 +16,6 @@ contract Task_08 {
 
     function getDynamicByteArrayElement(bytes calldata _data, uint _index) public pure returns (bytes1) {
         require(_index < _data.length, "Invalid index");
-        return data[_index];
+        return _data[_index];
     }
 }
